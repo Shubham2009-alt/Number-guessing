@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple and polished number guessing game.">
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="game-card" aria-labelledby="game-title">
+      <div class="badge">1 — 100</div>
+      <h1 id="game-title">Number Guessing</h1>
+      <p class="subtitle">Find the hidden number in as few guesses as possible.</p>
+
+      <div id="status" class="status" role="status" aria-live="polite">
+        Make your first guess.
+      </div>
+
+      <form id="guess-form">
+        <label for="guess">Your guess</label>
+        <input
+          id="guess"
+          name="guess"
+          type="number"
+          min="1"
+          max="100"
+          inputmode="numeric"
+          placeholder="Enter 1–100"
+          autocomplete="off"
+          required
+        >
+        <button type="submit" class="primary">Check Guess</button>
+      </form>
+
+      <button id="new-game" class="secondary" type="button">New Game</button>
+
+      <div class="stats" aria-label="Game statistics">
+        <div class="stat">
+          <span id="attempts">0</span>
+          <small>Attempts</small>
+        </div>
+        <div class="stat">
+          <span id="best">—</span>
+          <small>Best Score</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
