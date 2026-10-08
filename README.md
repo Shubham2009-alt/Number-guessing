@@ -35,7 +35,9 @@ The application uses a dark card-style interface with:
 
 The browser version is made with plain HTML, CSS, and JavaScript, so it requires no build step or third-party packages.
 
-If GitHub Pages is enabled for the repository, the site is deployed automatically by `.github/workflows/pages.yml` after changes reach `main`.
+### GitHub Pages
+
+The repository includes a GitHub Pages workflow. Before the first deployment, enable **Settings → Pages → Build and deployment → Source: GitHub Actions** in the repository. The workflow detects whether Pages is enabled and skips deployment cleanly when it is not.
 
 ## Desktop requirements
 
@@ -44,7 +46,7 @@ If GitHub Pages is enabled for the repository, the site is deployed automaticall
 
 Tkinter is included with most standard Python installations. On some Linux distributions, it may need to be installed separately.
 
-## Run the game
+## Run the desktop game
 
 Clone the repository:
 
@@ -117,4 +119,4 @@ Number-guessing/
 
 ## License
 
-This project is available for personal and educational use.
+No explicit open-source license has been added to this repository yet.
